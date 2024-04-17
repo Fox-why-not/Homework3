@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-    int I = 1111111111;
+    // Задача 2
+        int I = 1111111111;
     byte B = 127;
     short S = 32767;
     long L = 9223372036854775807L;
@@ -11,7 +12,8 @@ public class Main {
     System.out.println("значение переменной " + "S " + "с типом " + "short " + "равно " + S );
     System.out.println("значение переменной " + "L " + "с типом " + "long " + "равно " + L );
     System.out.println("значение переменной " + "F " + "с типом " + "float " + "равно " + F );
-    System.out.println("значение переменной " + "D " + "с типом " + "doudle " + "равно " + D );
+    System.out.println("значение переменной " + "D " + "с типом " + "double " + "равно " + D );
+    // задача 3
     float F2 = 27.12f;
     long L2 = 987678965549L;
     float F3 = 2.786f;
@@ -25,7 +27,8 @@ public class Main {
     short TotalP = 480;
     int ForEveryone = TotalP / (LP+AS+EA);
     System.out.println("На каждого ученика рассчитано " + ForEveryone + " листов бумаги");
-        byte BottlesInTwoMinutes =16;
+    // Задача с машиной для производства бутылок (4)
+    byte BottlesInTwoMinutes =16;
         int BottlesPerMinute =BottlesInTwoMinutes / 2;
         byte Hour = 60;
         int Day = Hour * 24;
@@ -38,6 +41,7 @@ public class Main {
         System.out.println ("за день машина произвела " + BottelsPerDay + " штук бутылок");
         System.out.println ("за три дня машина произвела " + BottelsInThreeDays + " штук бутылок");
         System.out.println ("за месяц машина произвела " + BottelsPerMonth + " штук бутылок");
+        // Задача с краской (5)
         byte WhiteForClass = 2;
         byte BrownForClass = 4;
         int PaintsForClass= BrownForClass + WhiteForClass;
@@ -46,6 +50,7 @@ public class Main {
         int TotalW = Classes * WhiteForClass;
         int TotalB = Classes * BrownForClass;
         System.out.println ("В школе, где " + Classes + " классов, нужно " + TotalW + " банок белой краски и " + TotalB + " банок коричневой краски. ") ;
+        // Задача про спортзавтрак (6)
         int SalaryM = 67760;
         byte BananaGr = 80;
         byte Milk100MlGr = 105;
@@ -58,7 +63,8 @@ public class Main {
         int SportsBreakfastGr = TotBanGr + TotMilkGr + TotIceCreamGr + TotEggGr ;
         float SportsBreakfastKg = SportsBreakfastGr / 1000;
         System.out.println ("Вес завтрака составляет " + SportsBreakfastGr + " граммов или " + SportsBreakfastKg + " килограммов. ") ;
-        byte WeightKg = 7;
+// Задача 7
+        short WeightKg = 7;
         int WeightGr = WeightKg * 1000;
         short GrFirst = 250;
         short GrSecond = 500;
@@ -66,10 +72,11 @@ public class Main {
         int SpeedWeightLoss2 = WeightGr / GrSecond;
         int AverageSpeed = (SpeedWeightLoss1 + SpeedWeightLoss2 ) / 2;
         System.out.println ( AverageSpeed + " день в среднем потребуется для похудения") ;
+        // Задача с зарплатами (8)
         int SalaryD = 83690;
         int SalaryK = 76230;
         double Bonus = 1.1;
-        byte Year55 = 12;
+        int Year55 = 12;
         double BonSalMInMonth = SalaryM * Bonus;
         double BonSalDInMonth = SalaryD * Bonus;
         double BonSalKInMonth = SalaryK * Bonus;
@@ -79,14 +86,14 @@ public class Main {
         double BonSalMInYear = BonSalMInMonth * Year55;
         double BonSalDInYear = BonSalDInMonth * Year55;
         double BonSalKInYear = BonSalKInMonth * Year55;
-        double DifferenceSalM = BonSalMInYear - SalMInYear;
-        double DifferenceSalD = BonSalDInYear - SalDInYear;
-        double DifferenceSalK = BonSalKInYear - SalKInYear;
+        double FinalSalM = BonSalMInYear - SalMInYear;
+        double FinalSalD = BonSalDInYear - SalDInYear;
+        double FinalSalK = BonSalKInYear - SalKInYear;
         System.out.println (" Маша теперь получает " + BonSalMInMonth + " рублей." +
-                " Годовой доход вырос на " + DifferenceSalM + " рублей."
+                " Годовой доход вырос на " + FinalSalM + " рублей."
                 + " Денис теперь получает " + BonSalDInMonth + " рублей." +
-                " Годовой доход вырос на " + DifferenceSalD + " рублей. "
+                " Годовой доход вырос на " + FinalSalD + " рублей. "
                 + " Кристина теперь получает " + BonSalKInMonth + " рублей." +
-                " Годовой доход вырос на " + DifferenceSalK + " рублей");
+                " Годовой доход вырос на " + FinalSalK + " рублей");
     }
 }
